@@ -18,6 +18,6 @@ while (integerNumber < 1000) {
         text = integerNumber;
     }
 
-    outputDiv.innerHTML = outputDiv.innerHTML + text + "<br";
+    outputDiv.innerHTML = outputDiv.innerHTML + text + "<br>";
 } 
 
