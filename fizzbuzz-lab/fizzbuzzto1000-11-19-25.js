@@ -1,19 +1,23 @@
 let integerNumber = 0;
+let outputDiv = document.getElementById("output");
 
 while (integerNumber < 1000) {
     integerNumber++;
+    let text = "";
     if (integerNumber%15 == 0) {
-        console.log("FizzBuzz");
+        text = "FizzBuzz";
     }
 
     else if (integerNumber%3 == 0 && integerNumber%5 != 0) {
-        console.log("Fizz");
+        text = "Fizz";
     }
     else if (integerNumber%5 == 0 && integerNumber%3 != 0) {
-        console.log("Buzz");
+        text = "Buzz";
     }
     else {
-        console.log(integerNumber);
+        text = integerNumber;
     }
+
+    outputDiv.innerHTML = outputDiv.innerHTML + text + "</br";
 } 
 
